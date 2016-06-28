@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5F7B9DE3-2260-4449-942D-390EBC172190}</ProjectGuid>
+    <ProjectGuid>{DD2C8C8F-996B-4452-95CF-D7D4D9BD317D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>lunkuo1</RootNamespace>
+    <RootNamespace>huiduzhifang</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -150,7 +150,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lunkuo1.cpp" />
+    <ClCompile Include="huiduzhifang.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
