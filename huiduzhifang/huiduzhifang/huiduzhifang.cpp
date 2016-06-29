@@ -5,12 +5,15 @@
 #include<opencv2/opencv.hpp>   
 
 using namespace std;
+
 #pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")  
 #define cvQueryHistValue_1D( hist, idx0 ) \  ((float)cvGetReal1D((hist)->bins, (idx0)))
+
 void FillWhite(IplImage *pImage)
 {
 	cvRectangle(pImage, cvPoint(0, 0), cvPoint(pImage->width, pImage->height), CV_RGB(255, 255, 255), CV_FILLED);
 }
+
 // 创建灰度图像的直方图  
 CvHistogram* CreateGrayImageHist(IplImage **ppImage)
 {
@@ -21,6 +24,7 @@ CvHistogram* CreateGrayImageHist(IplImage **ppImage)
 	cvCalcHist(ppImage, pcvHistogram);
 	return pcvHistogram;
 }
+
 // 根据直方图创建直方图图像  
 IplImage* CreateHisogramImage(int nImageWidth, int nScale, int nImageHeight, CvHistogram *pcvHistogram)
 {
@@ -46,6 +50,7 @@ IplImage* CreateHisogramImage(int nImageWidth, int nScale, int nImageHeight, CvH
 	}
 	return pHistImage;
 }
+
 int main(int argc, char** argv)
 {
 	const char *pstrWindowsSrcTitle = "原图(http://blog.csdn.net/MoreWindows)";
